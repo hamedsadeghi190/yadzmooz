@@ -1,0 +1,83 @@
+﻿@model Infrastructure.BillPay.Models.FinalResponse
+
+
+<link href="/css/bootstrap.css" rel="stylesheet" />
+
+<div class="card bg-white" style="margin:auto auto;">
+
+
+
+
+    @{
+        if (Model.Paid == "true")
+        {
+            <center class="p-5 bg-success">
+
+                <label id="Message" class="h4 text-white">The Payment Opration Has Been Successfuly Done</label>
+
+            </center>
+        }
+        else if (Model.Paid == "false")
+        {
+            <center class="p-5 bg-danger">
+
+                <label id="Message" class="h4 text-white">The Payment Opration Has Been Faild</label>
+
+            </center>
+        }
+    }
+
+    <!--<table class="table table-bordered table-striped" style="align-content:center;margin:auto auto 32px auto;">
+
+        <tr>
+            <td style="width:50%; align-content:center;text-align:center;">
+                <label id="lbl4" class="text-dark bg-info">Amount</label>
+
+            </td>
+            <td style="width:50%;align-content:center;text-align:center;">
+                <label id="Amount" class="text-dark bg-info">-->@*@Model.Amount*@<!--</label>
+                <label id="Amount" class="text-dark bg-info">RM @string.Format("{0:N2}", Model.Amount)</label>
+            </td>
+
+        </tr>
+    </table>-->
+
+
+
+
+
+
+    <table class="table" style="width:100%;align-content:center;">
+        <tr>
+            <td style="align-content:center;text-align:center;">
+                <button id="back-btn" class="btn btn-success bg-info" onclick="backToKargozar(@Model.Paid)">Return To App</button>
+            </td>
+        </tr>
+    </table>
+
+
+
+</div>
+
+
+<script>
+
+    function backToKargozar(status) {
+        //window.location = 'intent:#Intent;action=schemas.example.foodCustomer.MainActivity;end';        
+        window.location = 'http://customerapp.com/pay?status=' + status;
+    }
+</script>
+
+
+
+
+@*var loc;
+
+
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        loc = '@PaymentData.MobileActivity';
+
+    } else {
+        loc = "@PaymentData.SiteAddress"
+        document.getElementById("back-btn").innerHTML='بازگشت به سایت';
+    }*@

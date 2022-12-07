@@ -1,0 +1,26 @@
+version: '3.4'
+
+services:
+  todoapi:
+    image: Infrastructure.MobileEndPoint
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on: 
+      - migrations
+      - db
+  db:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      SA_PASSWORD: "Hirad1858"
+      ACCEPT_EULA: "Y"
+    ports:
+    - "14331:1433"
+    depends_on: 
+      - migrations
+  migrations:
+    build: 
+      context: .
+      dockerfile: Migrations.Dockerfile

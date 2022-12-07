@@ -1,0 +1,99 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+}
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="~/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/assets/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <section class="form-01-main">
+        <div class="form-cover">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-sub-main">
+                            <div class="_main_head_as">
+                                <a href="#">
+                                    <img src="~/assets/images/vector.png">
+                                </a>
+                            </div>
+
+
+
+                            <h1>مبلغ قابل پرداخت @ViewBag.Amount ریال</h1>
+
+                            <br>
+                            <br>
+                            <br>
+                            <h5>جهت خرید اشتراک @ViewBag.Title</h5>
+                            <br>
+                            <br>
+
+                            <form name="input" id="form"
+                                  action="https://bpm.shaparak.ir/pgwchannel/startpay.mellat"
+                                  method="post" target="_blank">
+                                <input style="display:none" type="text" id="RefId" name="RefId" value="@ViewBag.RefId" />
+                                <input style="display:none" type="text" id="mobileNo" name="MobileNo"
+                                       value='@ViewBag.MobileNo' />
+                                <input style="display:none" type="submit" value="Submit" />
+
+
+                            </form>
+
+                            @*<div class="form-group">
+                                <div class="check_box_main">
+                                    <a href="#" style="color:#fff" class="pas-text">انصراف</a>
+                                </div>
+                            </div>*@
+                            <div class="form-group">
+                                <div class="btn_uy">
+                                    <a onclick="sibmitForm()"><span>رفتن به درگاه پرداخت</span></a>
+                                </div>
+                            </div>
+
+
+
+                            <!--              <div class="form-group">-->
+                            <!--                <div class="btn_uy" style="background-color: #fefefe!important; ;color:#fd7e14 !important">-->
+                            <!--                  <a   href="#"><span>انصراف</span></a>-->
+                            <!--                </div>-->
+                            <!--              </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+
+
+
+
+<script>
+     function  sibmitForm() {
+        console.log("in outer function");
+        document.forms['form'].submit();
+
+    }
+
+
+</script>

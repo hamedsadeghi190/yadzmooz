@@ -1,0 +1,279 @@
+  /* =======================================================================
+Template Name: Youtubers
+Author:  SmartEye Technologies
+Author URI: www.smarteyeapps.com
+Version: 1.0
+coder name:Prabin Raja
+Description: This Template is created for Youtubers
+======================================================================= */
+/* ===================================== Import Variables ================================== */
+
+/* ===================================== Basic CSS ==================================== */
+
+
+
+
+
+
+  @font-face {
+      font-family: iranyekan;
+      font-style: normal;
+      font-weight: bold;
+      src: url('../fonts/eot/iranyekanwebbold.eot');
+      src: url('../fonts/eot/iranyekanwebbold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+      url('../fonts/woff/iranyekanwebbold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url('../fonts/woff2/iranyekanwebbold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+      url('../fonts/ttf/iranyekanwebbold.ttf') format('truetype');
+  }
+
+  @font-face {
+      font-family: iranyekan;
+      font-style: normal;
+      font-weight: 100;
+      src: url('../fonts/eot/iranyekanwebthin.eot');
+      src: url('../fonts/eot/iranyekanwebthin.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+      url('../fonts/woff/iranyekanwebthin.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url('../fonts/woff2/iranyekanwebthin.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+      url('../fonts/ttf/iranyekanwebthin.ttf') format('truetype');
+  }
+
+  @font-face {
+      font-family: iranyekan;
+      font-style: normal;
+      font-weight: 300;
+      src: url('../fonts/eot/iranyekanweblight.eot');
+      src: url('../fonts/eot/iranyekanweblight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+      url('../fonts/woff/iranyekanweblight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url('../fonts/woff2/iranyekanweblight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+      url('../fonts/ttf/iranyekanweblight.ttf') format('truetype');
+  }
+
+  @font-face {
+      font-family: iranyekan;
+      font-style: normal;
+      font-weight: normal;
+      src: url('../fonts/eot/iranyekanwebregular.eot');
+      src: url('../fonts/eot/iranyekanwebregular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+      url('../fonts/woff/iranyekanwebregular.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url('../fonts/woff2/iranyekanwebregular.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+      url('../fonts/ttf/iranyekanwebregular.ttf') format('truetype');
+  }
+
+  @font-face {
+      font-family: iranyekan;
+      font-style: normal;
+      font-weight: 500;
+      src: url('../fonts/eot/iranyekanwebmedium.eot');
+      src: url('../fonts/eot/iranyekanwebmedium.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+      url('../fonts/woff/iranyekanwebmedium.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url('../fonts/woff2/iranyekanwebmedium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+      url('../fonts/ttf/iranyekanwebmedium.ttf') format('truetype');
+  }
+
+  @font-face {
+      font-family: iranyekan;
+      font-style: normal;
+      font-weight: 800;
+      src: url('../fonts/eot/iranyekanwebextrabold.eot');
+      src: url('../fonts/eot/iranyekanwebextrabold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+      url('../fonts/woff/iranyekanwebextrabold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url('../fonts/woff2/iranyekanwebextrabold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+      url('../fonts/ttf/iranyekanwebextrabold.ttf') format('truetype');
+  }
+
+  @font-face {
+      font-family: iranyekan;
+      font-style: normal;
+      font-weight: 850;
+      src: url('../fonts/eot/iranyekanwebblack.eot');
+      src: url('../fonts/eot/iranyekanwebblack.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+      url('../fonts/woff/iranyekanwebblack.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url('../fonts/woff2/iranyekanwebblack.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+      url('../fonts/ttf/iranyekanwebblack.ttf') format('truetype');
+  }
+
+  @font-face {
+      font-family: iranyekan;
+      font-style: normal;
+      font-weight: 900;
+      src: url('../fonts/eot/iranyekanwebextrablack.eot');
+      src: url('../fonts/eot/iranyekanwebextrablack.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+      url('../fonts/woff/iranyekanwebextrablack.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url('../fonts/woff2/iranyekanwebextrablack.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+      url('../fonts/ttf/iranyekanwebextrablack.ttf') format('truetype');
+  }
+
+
+
+
+  body {
+      font-family: iranyekan  !important;
+
+  }
+
+
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: #444;
+}
+
+a:hover {
+  color: #444;
+}
+
+ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a:hover,
+a:focus,
+input,
+textarea {
+  text-decoration: none;
+  outline: none;
+}
+
+
+.form-01-main,html,body{
+  height: 100%;
+
+}
+.form-01-main {
+    padding: 40px 0px;
+    background: url(../images/bg-01.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+
+    width:100%;
+    z-index: 1;
+}
+
+.form-cover {
+    position: absolute;
+    content: "";
+    background: rgba(0,0,0,0.8);
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    overflow: auto;
+}
+
+.form-sub-main{
+    max-width:500px;
+    width:100%;
+    display:block;
+    margin:20px auto;
+    background:rgba(0,0,0,0.8);
+    padding: 45px 60px 46px;
+
+}
+ @media screen and (max-width:767px){
+      .form-sub-main{
+        padding: 30px;
+      }
+  }
+
+.form-control {
+    min-height: 50px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 15px;
+    background-color: transparent;
+    color: #fff;
+    margin:30px 0px;
+}
+
+.form-sub-main{
+    color:#545454;
+    font-size:16px;
+    margin-top: 5%;
+}
+
+.form-sub-main .form-group label{
+    display:block;
+    margin-bottom:6px;
+    color:#fff;
+}
+
+.form-group{
+    position:relative;
+    z-index:9;
+}
+
+.toggle-password{
+    position:absolute;
+    right:8px;
+    bottom:18px;
+}
+
+.form-group .form-control:focus{
+    background:transparent;
+    box-shadow:none;
+    border-color:#495057;
+    color:#495057;
+}
+
+.check_box_main{
+  display:inline-block;
+  width:100%;
+  text-align:center;
+}
+
+.btn_uy{
+  position:relative;
+  z-index:9;
+  display:block;
+  margin:20px 0px;
+}
+
+.btn_uy a {
+    padding: 10px 20px;
+    background: #00a093;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    white-space: nowrap;
+    line-height: normal;
+    border-radius: 5px;
+    color: #fff;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    cursor:pointer;
+}
+
+._main_head_as{
+  margin:20px 0 25px 0px;
+  display:inline-block;
+  z-index:2;
+  position:relative;
+}
+
+._main_head_as a img{
+  height:100px;
+  width:100px;
+  position:relative;
+  border-radius:50px;
+}

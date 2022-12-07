@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+
+    <PackageReference Include="RestSharp" Version="107.1.1" />
+
+    <PackageReference Include="Zarinpal" Version="2.0.4" />
+    <PackageReference Include="MongoDB.Bson" Version="2.11.5" />
+    <PackageReference Include="MongoDB.Driver" Version="2.11.5" />
+    <PackageReference Include="MongoDB.Driver.Core" Version="2.11.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Core.ApplicationServices\Core.ApplicationServices.csproj" />
+    <ProjectReference Include="..\..\Core\Core.Contracts\Core.Contracts.csproj" />
+    <ProjectReference Include="..\..\Core\Core.Entities\Core.Entities.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Infrastructure.MobileEndPoint\Infrastructure.MobileEndpoint.csproj" />
+    <ProjectReference Include="..\..\Utility\Utility.Tools\Utility.Tools.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,112 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+	  <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IsTransformWebConfigDisabled>true</IsTransformWebConfigDisabled>
+    <EnableMSDeployAppOffline>true</EnableMSDeployAppOffline>
+    <UserSecretsId>28e55c0f-83e8-489a-b11b-803deeb79d4c</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Connected Services\ServiceReference1\Reference.cs" />
+  </ItemGroup>
+  <ItemGroup>
+
+    <PackageReference Include="ExcelDataReader" Version="3.6.0" />
+
+    <PackageReference Include="JsonApiSerializer" Version="1.7.4" />
+
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.RazorPages" Version="2.2.5" />
+
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
+
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.ApiDescription.Client" Version="5.0.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MongoDB.Bson" Version="2.11.5" />
+    <PackageReference Include="MongoDB.Driver" Version="2.11.5" />
+    <PackageReference Include="MongoDB.Driver.Core" Version="2.11.5" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="NSwag.ApiDescription.Client" Version="13.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.0" />
+    <PackageReference Include="NEST" Version="7.10.1" />
+    <PackageReference Include="RestSharp" Version="106.15.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.4.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="5.1.1" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+    <PackageReference Include="System.ServiceModel.Duplex" Version="4.8.*" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.8.*" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.8.*" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.8.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Core.ApplicationServices\Core.ApplicationServices.csproj" />
+    <ProjectReference Include="..\..\Utility\Utility.Tools\Utility.Tools.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\NewFolder1\" />
+    <Folder Include="wwwroot\NewFolder\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference1\Reference.cs" />
+    <None Include="OpenAPIs\pgw.json" ClassName="Buy" />
+    <None Include="OpenAPIs\pgw1.json" ClassName="CategoryController" />
+    <None Include="wwwroot\assets\fonts\et-line.svg" />
+    <None Include="wwwroot\assets\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\assets\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\assets\fonts\icomoon.svg" />
+    <None Include="wwwroot\assets\fonts\roboto-bold-webfont.svg" />
+    <None Include="wwwroot\assets\fonts\roboto-bold-webfont.woff2" />
+    <None Include="wwwroot\assets\fonts\roboto-light-webfont.woff2" />
+    <None Include="wwwroot\assets\fonts\roboto-regular-webfont.woff2" />
+    <None Include="wwwroot\assets\fonts\robotocondensed-regular-webfont.svg" />
+    <None Include="wwwroot\assets\fonts\robotocondensed-regular-webfont.woff2" />
+    <None Include="wwwroot\assets\fonts\svg\iranyekanwebblack.svg" />
+    <None Include="wwwroot\assets\fonts\svg\iranyekanwebbold.svg" />
+    <None Include="wwwroot\assets\fonts\svg\iranyekanwebextrablack.svg" />
+    <None Include="wwwroot\assets\fonts\svg\iranyekanwebextrabold.svg" />
+    <None Include="wwwroot\assets\fonts\svg\iranyekanweblight.svg" />
+    <None Include="wwwroot\assets\fonts\svg\iranyekanwebmedium.svg" />
+    <None Include="wwwroot\assets\fonts\svg\IRANYekanWebRegular.svg" />
+    <None Include="wwwroot\assets\fonts\svg\iranyekanwebthin.svg" />
+    <None Include="wwwroot\assets\fonts\woff2\IRANYekanWebBlack.woff2" />
+    <None Include="wwwroot\assets\fonts\woff2\IRANYekanWebBold.woff2" />
+    <None Include="wwwroot\assets\fonts\woff2\IRANYekanWebExtraBlack.woff2" />
+    <None Include="wwwroot\assets\fonts\woff2\IRANYekanWebExtraBold.woff2" />
+    <None Include="wwwroot\assets\fonts\woff2\IRANYekanWebLight.woff2" />
+    <None Include="wwwroot\assets\fonts\woff2\IRANYekanWebMedium.woff2" />
+    <None Include="wwwroot\assets\fonts\woff2\IRANYekanWebRegular.woff2" />
+    <None Include="wwwroot\assets\fonts\woff2\IRANYekanWebThin.woff2" />
+    <None Include="wwwroot\assets\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\assets\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\assets\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\assets\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\assets\js\bootstrap.esm.js" />
+    <None Include="wwwroot\assets\js\bootstrap.esm.js.map" />
+    <None Include="wwwroot\assets\js\bootstrap.esm.min.js" />
+    <None Include="wwwroot\assets\js\bootstrap.esm.min.js.map" />
+    <None Include="wwwroot\assets\js\bootstrap.js" />
+    <None Include="wwwroot\assets\js\bootstrap.js.map" />
+    <None Include="wwwroot\assets\js\bootstrap.min.js" />
+    <None Include="wwwroot\assets\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\assets\js\jquery.min.js" />
+    <None Include="wwwroot\assets\js\owl.carousel.min.js" />
+  </ItemGroup>
+
+ 
+
+</Project>
